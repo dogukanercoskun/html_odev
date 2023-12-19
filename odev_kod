@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        margin: 0;
+        background-color: lightblue;
+        flex-direction: column;
+      }
+
+      .sudoku-frame {
+        background-color: yellow;
+        border: 3px solid rgba(80, 76, 71, 0.8);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .sudoku-box {
+        margin: 1px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1px; /* Hücreler arası boşluk */
+      }
+
+      .cell {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+      }
+      h1 {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sudoku</h1>
+    <!-- Sudoku Frame -->
+    <div class="sudoku-frame">
+      <!-- Sudoku Boxes -->
+      <div class="sudoku-box">
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+      </div>
+
+      <div class="sudoku-box">
+        <div class="cell">9</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+      </div>
+    </div>
+  </body>
+</html>
